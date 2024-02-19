@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@component {
+  .continer {
+    @apply w-full md:w-[95%] lg:w-[85%];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* If you're using a separate CSS file */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+@keyframes eastIconMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-eastIconMove {
+  animation: eastIconMove 2s linear infinite;
+}
+/* 
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
